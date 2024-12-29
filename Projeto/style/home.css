@@ -1,0 +1,204 @@
+html {
+    scroll-behavior: smooth;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parallax_principal{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax{
+    background-image: url(../img/coqueirinho.jpg);
+    min-height: 400px;
+}
+.content {
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+}
+.parallax2{
+    background-image: url(../img/galinhas.jpg);
+    min-height: 400px;
+    /* linear-gradient(rgba(0,0,0,0.5))  */
+}
+.parallax3{
+    background-image: url(../img/pipa.jpg);
+    min-height: 400px;
+}
+.parallax4{
+    /* background:linear-gradient( rgb(0, 33, 182), rgb(0, 0, 67)); */
+    background-image: url(../img/ceu.png);
+    min-height: 100vh;
+}
+.parallax5{
+    background-image: url(../img/ceu.png);
+    background-color: #015422;
+    min-height: 100vh;
+
+}
+div:not(.sidebar2), h1 {
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+header {
+    color: #fff;
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    text-align: start;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+}
+a, a:visited {
+    text-decoration: none;
+    color: white;
+}
+a:hover, 
+a:focus,
+a:active {
+    text-decoration: underline;
+}
+footer {
+    bottom: 0%;
+    background-color: rgb(0, 0, 67);
+    color: #ff0f;
+    margin-top: 350px;
+    text-align: center;
+    clear: both;
+    border-radius: 12px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+div h2 {
+    color: #ffffff;
+    background-color: rgb(0, 0, 67);
+    border-radius: 20px;
+    background-size: 20px;
+    text-align: center;
+    width: 60vh;
+    
+}
+.botao {
+    background-color: transparent;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    transition: 0.6s;
+}
+.botao:hover {
+    background-color: rgb(50, 50, 51);
+}
+div p, div li{
+    color: white;
+}
+h2 {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.sidebar2 {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    transition: left 0.5s;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.open{
+    left: 0%;
+}
+.botao-toggle {
+    position: fixed;
+    top: 4px;
+    left: 15px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 67);
+    padding: 10px;
+}
+.botao-fechar {
+    animation: mymove 0.5s;
+    left: 255px;
+}
+.botao-fechar2 {
+    animation: mymove2 0.5s;
+    left: 15px;
+}
+@keyframes mymove{
+    0% {left: 15px;}
+    100% { left: 255px;}
+}
+@keyframes mymove2{
+    0% {left: 255px;}
+    100% { left: 15px;}
+}
+.conteudo {
+    margin-left: 250px;
+    transition: margin-left 0.5s;
+}
+li {
+    padding: 15px;
+    position: relative;
+}
+.nome_logo {
+    position: absolute;
+    right: 7%;
+    margin-top: 10px;
+    
+}
+.logo {
+    position: absolute;
+    display: flex;
+    right: 10px;
+    
+}
+div img {
+    position: absolute;
+    height: 55px;
+    right: 15px;
+}
+div h3 {
+    background-color: rgb(0, 0, 67);
+    border-radius: 20px;
+    background-size: 20px;
+    text-align: center;
+    width: 25vw;
+}
+h3 {
+    font-family: "Audiowide", sans-serif;
+}
+@media only screen and (max-width: 400px) {
+    .mobile-hide{ display: none !important; }
+    }
+    @media only screen and (max-width: 400px) {
+    .mobile{ display: inline !important; }
+    }
+    @media only screen and (min-width: 500px) {
+    .desktop-hide{ display: none !important; }
+    }
+/* .mobile {
+    width: 10;
+}
+.mobile-hide {
+    width: 80vh;
+} */

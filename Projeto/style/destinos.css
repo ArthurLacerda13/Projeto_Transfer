@@ -1,0 +1,19 @@
+table {
+    background-color: rgb(240,248,255);
+    border: 1px solid black;
+    
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+.vazio {
+    border: none;
+}
+th {
+    background-color: rgb(168, 218, 213);
+}
+.table-hover td:hover {
+    background-color: rgb(168, 218, 213);
+}
+    
