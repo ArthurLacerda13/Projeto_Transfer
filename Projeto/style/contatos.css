@@ -84,7 +84,7 @@ body {
     z-index: 0;
 }
 .parallax1 {
-    background-image: url(/Projeto/img/sol_nascendo.png);
+    background-image: url(../img/sol_nascendo.png);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
