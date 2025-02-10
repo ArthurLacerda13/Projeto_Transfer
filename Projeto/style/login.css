@@ -32,7 +32,7 @@ body {
   z-index: 0;
 }
 .parallax1 {
-  background-image: url(/Projeto/img/home_principal.jpg); 
+  background-image: url(../img/home_principal.jpg); 
   min-height: 100vh;
   display: flex;
   flex-direction: column;

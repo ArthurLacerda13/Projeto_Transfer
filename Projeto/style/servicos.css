@@ -18,7 +18,7 @@
     z-index: 0;
 }
 .parallax1 {
-    background-image: url(/Projeto/praias/areiavermelha.jpg);
+    background-image: url(../praias/areiavermelha.jpg);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
