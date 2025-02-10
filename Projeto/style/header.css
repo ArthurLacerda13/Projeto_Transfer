@@ -1,0 +1,127 @@
+header {
+    height: 70px;
+    width: auto;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: rgba( 0, 0, 0, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 12px;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+header.scrolling {
+    height: 55px;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.logo a {
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #eeee;
+    text-decoration: none;
+}
+header ul {
+    display: flex;
+    list-style: none;   
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: white;
+    font-size: 1rem;
+    padding: 7px 15px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+header label a:hover {
+    text-decoration: none;
+}
+
+header ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.checkbtn {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: rgba(170, 170, 170, 0.926);
+    /* background-color: rgb(0, 0, 230); */
+    background: rgba(7, 12, 156, 0.25);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(3, 3, 158, 0.926);
+    border-radius: 25prgb(203, 207, 206)
+}   
+
+@media (max-width: 1070px) {
+    .checkbtn {
+        display: flex;
+    }
+
+    header ul {
+        position: fixed;
+        top: 70px;
+        left: -105%;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        transition: left 0.5s;
+    }
+
+    header ul li {
+        margin: 20px 0;
+    }
+
+    header ul li a {
+        font-size: 1.2rem;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}

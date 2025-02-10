@@ -1,0 +1,67 @@
+
+.redes-sociais {
+    display: flex;
+    position: relative;
+    gap: 40px;
+    justify-content: center;
+}
+
+.redes-sociais li {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35), 
+                0 4px 12px rgba(0, 0, 0, 0.15); 
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.2s;
+    will-change: transform, opacity; 
+}
+
+.redes-sociais li:hover {
+    width: 140px;
+    background-color: rgba(255, 255, 255, 0.05); 
+}
+
+.redes-sociais li span {
+    position: absolute;
+}
+
+.redes-sociais li .icon {
+    color: #636363;
+    font-size: 1.6em;
+    transition: 0.2s;
+}
+
+.redes-sociais li .text {
+    color: #FFF;
+    font-size: 15px;
+    transform: scaleX(0);
+    transition: 0.2s;
+    transition-delay: 0.1s;
+}
+
+.redes-sociais li:hover .text {
+    transform: scaleX(1);
+}
+
+.redes-sociais li:hover .icon {
+    transform: scaleX(0);
+}
+
+.redes-sociais li::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 80px;
+}
+
+.redes-sociais li:hover::before {
+    opacity: 1;
+    inset: 1;
+}

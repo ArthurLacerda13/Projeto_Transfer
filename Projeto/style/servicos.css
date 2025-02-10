@@ -1,0 +1,48 @@
+.parallax_principal {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.parallax_principal::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.54) 100%);
+    z-index: 0;
+}
+.parallax1 {
+    background-image: url(/Projeto/praias/areiavermelha.jpg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 229, 255);
+    transition: width 0.4s ease, left 0.4s ease;
+    
+}
+
+header ul li a:hover {
+    color: rgb(0, 229, 255);
+    text-decoration: none;
+}
+.logo a:hover {
+    color: rgb(0, 229, 255);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -3px -3px 5px rgba(255, 251, 251, 0.2);
+      
+}

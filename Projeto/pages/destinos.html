@@ -1,120 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/Projeto/style/destinos.css">
+    <link rel="stylesheet" href="/Projeto/style/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Ponnala&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <table class="table-hover">
+    <header>
+        <div class="logo"> 
+            <a href="/index.html">
+                surf Trip 
+            </a>
+        </div>
 
-        <th>João Pessoa</th>
-        <th>Cabedelo</th>
-        <th>Conde<br/>(litoral Sul)</th>
-        <th>Pitimbu<br/>(litoral Sul)</th>
-        <th>Baía da Traição<br/>(litoral Norte)</th>
-        <th>Rio Tinto<br/>(litoral Norte)</th>
-        <th>Mataraca<br/>(litoral norte)</th>
-        <th>Marcação<br/>(litoral Norte)</th>
-        <tr>
-            <td>Praia do Bessa</td>
-            <td>Praia de Intermares</td>
-            <td>Praia da Barra de Gramame Sul</td>
-            <td>Praia de Barra do Graú</td>
-            <td>Praia das Cardosas</td>
-            <td>Praia de Barra do Mamanguape</td>
-            <td>Praia de Guaju</td>
-            <td>Praia de Coqueirinho do Norte</td>
-
-            
-        </tr>
-        <tr>
-            <td>Praia do Manaíra</td>
-            <td>Praia do Jacaré</td>
-            <td>Praia do Amor</td>
-            <td>Praia Bela</td>
-            <td>Praia do Jerimum</td>
-            <td>Lagoa de Praia</td>
-            <td>Praia da Pavuna</td>
-            <td>Praia de Camurupim</td>
-            
-        </tr>
-        <tr>
-            <td>Praia de Tambaú</td>
-            <td>Praia Formosa</td>
-            <td>Praia de Jacumã</td>
-            <td>Praia da Barra do Abiaí</td>
-            <td>Praia do Tambá</td>
-            <td>Praia de Campina</td>
-            <td>Praia da Baleia</td>
-            <td>Praia de Tramataia</td>
-        </tr>
-        <tr>
-            <td>Picãozinho</td>
-            <td>Praia de Areia Dourada</td>
-            <td>Praia de Carapibus</td>
-            <td>Praia do Pontal</td>
-            <td>Praia do Forte</td>
-            <td>Praia do Oiteiro</td>
-            <td>Praia de Barra de Camaratuba</td>
-
-        </tr>
-        <tr>
-            <td>Praia do Cabo Branco</td>
-            <td>Praia de Camboinha</td>
-            <td>Praia de Tabatinga</td>
-            <td>Praia de Pitimbu</td>
-            <td>Praia da Baia da Traição</td>
-            <td>Praia do Miriri</td>
-            <td>Praia da Boca da Barra</td>
-        </tr>
-        <tr>
-            <td>Praia do Seixas</td>
-            <td>Praia do Poço</td>
-            <td>Praia de Coqueirinho</td>
-            <td>Praia da Guarita</td>
-            <td>Praia das Trincheiras</td>
-        </tr>
-        <tr>
-            <td>Praia de Jacarapé</td>
-            <td>Praia de Ponta de Campina</td>
-            <td>Praia de Tramataia</td>
-            <td>Praia de pontinha</td>
-        </tr>
-        <tr>
-            <td>Praia do Arraial</td>
-            <td>Praia de Ponta de Matos</td>
-            <td>Praia de Arapuca</td>
-            <td>Praia dos Mariscos</td>
-        </tr>
-        <tr>
-            <td>Praia do Sol</td>
-            <td class="vazio"></td>
-            <td>Praia de Tambaba</td>
-            <td>Praia Azul</td>
-        </tr>
-        <tr>
-            <td>Praia da Barra de Gramame</td>
-            <td class="vazio"></td>
-            <td class="vazio"></td>
-            <td>Praia de Santa Rita</td>
-        </tr>
-        <tr>
-            <td class="vazio"></td>
-            <td class="vazio"></td>
-            <td class="vazio"></td>
-            <td>Praia Ponta de Coqueiros</td>
-        </tr>
-        <tr>
-            <td class="vazio"></td>
-            <td class="vazio"></td>
-            <td class="vazio"></td>
-            <td>Praia de Acaú</td>
-        </tr>
-    </table>
+        <ul class="active">
+            <li><a href="/index.html">Início</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="login.html">Entrar</a></li>
+        </ul>
+    </header>
+        <h1>Praias do Litoral Sul</h1>
+        <ul class="content">
+            <li>
+                <img src="/Projeto/praias/amor.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Praia do Amor</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/jacuma.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Praia de Jacumã</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/carapibus.webp" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Praia de Carapibus</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/tabatinga.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Praia de Tabatinga</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/img/coqueirinho.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Coqueirinho</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/arapuca.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Praia de Arapuca</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/tambaba.webp" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Praia de Tambaba</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/grau.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Barra do Graú</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/praiabela.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Praia Bela</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+        </ul>
+        <h1>Praias do Litoral Norte</h1>
+        <ul class="content">
+            <li>
+                <img src="/Projeto/praias/bt.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Baia da Traição</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/camaratuba.webp" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Camaratuba</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/coqueirinhodonorte.webp" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Coqueirinho Norte</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/tramataia.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Tramataia</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/lucena.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Lucena</h2>
+                        <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte</p>
+                    </span>
+                </div>
+            </li>
+        </ul>
+        <h1>Praias de João Pessoa</h1>
+        <ul class="content">
+            <li>
+                <img src="/Projeto/praias/tambau.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Tambaú</h2>
+                        <p>É uma praia bonita, com muitos coqueiros, algumas quadras esportivas e o mar apresenta ondas
+                            tranquilas e coloração esverdeada. </p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/bessa.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Bessa</h2>
+                        <p>A Praia do Bessa é uma das melhores opções para quem quer curtir a vida à beira-mar em João
+                            Pessoa. Sua faixa de areia é uma das mais extensas da cidade, o que acaba por oferecer
+                            diferentes pontos ao longo da orla, alguns movimentados e outros tranquilos. </p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/cabobranco.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Cabo Branco</h2>
+                        <p>Cabo Branco é uma das praias urbanas de João Pessoa mais completas para uma vida à beira-mar.
+                            O bairro conta com um bom número de hotéis e restaurantes, além de uma orla com ciclovia e
+                            cenários agradáveis para caminhadas. </p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/seixas.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Piscinas Naturais</h2>
+                        <p>Localizadas no ponto mais Oriental das Américas, a praia do Seixas onde temos as Piscinas
+                            Naturais oferecendo, lazer, mergulho, aventura. Tudo isso a menos de 1 Km de um dos
+                            principais pontos turísticos da capital paraibana, o Farol do Cabo Branco.</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/jacarape.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Praia de Jacarapé</h2>
+                        <p>É conhecida também por sua tranquilidade e clima aconchegante. Costuma receber um bom número
+                            de turistas durante a alta temporada, que ao chegarem no lugar aproveitam para relaxar,
+                            tomar um refrescante banho de mar e se distanciar do cotidiano agitado das grandes cidades.
+                        </p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/intermares.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Praia de Intermares</h2>
+                        <p>Você ama surfar e está procurando um destino pra pegar sua onda? Essa é uma das praias de
+                            João Pessoa que é ideal para você</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/areiavermelha.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Areia Vermelha</h2>
+                        <p>Uma ilha que surge no meio do mar com a maré baixa. Águas rasas e cristalinas ao redor de
+                            toda a ilha, piscinas naturais em meio aos corais, espécies exóticas de vida marinha e muito
+                            mais.</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/dique.jpeg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Praia Formosa</h2>
+                        <p>A Praia Formosa, com aproximadamente 05Km de extensão se destaca pelas suas areias douradas,
+                            águas rasas e tranquilas. Com uma vasta vegetação de coqueiros, restinga e um trecho de
+                            remanescentes da Mata Atlântica.</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <img src="/Projeto/praias/jacare.jpg" alt="">
+                <div class="content">
+                    <span>
+                        <h2>Praia do Jacaré</h2>
+                        <p>O Pôr do Sol da Praia do Jacaré é um dos principais pontos turísticos do Estado da Paraíba, e
+                            está localizado às margens do rio Paraíba, na cidade portuária de Cabedelo, situada no
+                            litoral, 10 km ao norte da capital João Pessoa.</p>
+                    </span>
+                </div>
+            </li>
+        </ul>
 </body>
+<script src="../scripts/menu.js"></script>
+<script src="../scripts/scroll_logo.js"></script>
 
 </html>

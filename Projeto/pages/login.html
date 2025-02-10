@@ -1,108 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-	<title>Login V3</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/Projeto/style/util.css">
-	<link rel="stylesheet" type="text/css" href="/Projeto/style/login.css">
-<!--===============================================================================================-->
-<meta name="robots" content="noindex, follow">
+  <title>Login V3</title>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Ponnala&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/Projeto/style/header.css">
+  <link rel="stylesheet" href="/Projeto/style/login.css">
+  <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					<span class="login100-form-logo">
-						<i class="zmdi zmdi-landscape"></i>
-					</span>
+<body class="parallax_principal parallax1">
+  <header>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"> <a href="/index.html">
+        surf Trip </a>
+    </label>
 
-					<span class="login100-form-title p-b-34 p-t-27">
-						Login
-					</span>
+    <ul class="active">
+      <li><a href="/index.html">Início</a></li>
+      <li><a href="destinos.html">Destinos</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="login.html">Entrar</a></li>
+    </ul>
+  </header>
+  <main>
+    <div class="container">
+      <div class="buttonsForm">
+        <div class="btnColor"></div>
+        <button class="branco transicao" id="btnSignin">Logar</button>
+        <button class="transicao" id="btnSignup">Criar</button>
+      </div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Enter Usuário">
-						<input class="input100" type="text" name="Usuário" placeholder="Usuário">
-						<span class="focus-input100" data-placeholder="&#xf207;"></span>
-					</div>
+      <form id="signin">
+        <input type="text" id="email" placeholder="Email" required />
+        <i class="fas fa-envelope iEmail"></i>
+        <input type="password" placeholder="Senha" id="senha" required />
+        <i class="olho bi bi-eye-slash" id="btn-senha" onclick="mostrarSenha()"></i>
+        <i class="fas fa-lock iPassword "></i>
+        <div class="divCheck">
+          <input type="checkbox" />
+          <span>Lembre-me</span>
+        </div>
+        
+        <button type="submit">Entrar</button>
+       <div id="message"></div> 
+      </form>
 
-					<div class="wrap-input100 validate-input" data-validate="Enter Senha">
-						<input class="input100" type="Senha" name="pass" placeholder="Senha">
-						<span class="focus-input100" data-placeholder="&#xf191;"></span>
-					</div>
+      <form id="signup">
+        <input type="text" placeholder="Email" required />
+        <i class="fas fa-envelope iEmail"></i>
+        <input type="password" placeholder="Senha" required />
+        <i class="fas fa-lock iPassword"></i>
+        <input type="password" placeholder="Confirme a senha" required />
+        <i class="fas fa-lock iPassword2"></i>
+        <div class="divCheck">
+          <input type="checkbox" required />
+          <a href="#"><span>Termos</span></a>
+        </div>
+        <button type="submit">Inscreva-se</button>
+      </form>
+    </div>
+  </main>
 
-					<div class="contact100-form-checkbox">
-						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-						<label class="label-checkbox100" for="ckb1">
-							Remember me
-						</label>
-					</div>
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
-					</div>
-
-					<div class="text-center p-t-90">
-						<a class="txt1" href="#">
-							Forgot Password?
-						</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-
-
-	<div id="dropDownSelect1"></div>
-
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="/Projeto/scripts/login.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-23581568-13');
-	</script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8f6964fe3dc201a4","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2024.10.5","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
+  <script src="../scripts/login.js"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
 </html>

@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 67); 
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/home_principal.jpg);
+    /* background-image: linear-gradient( rgb(87, 74, 0), rgb(155, 137, 0)); */
+}
+.fundo{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/home_principal.jpg);
+}
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+.contact-icons a {
+    font-size: 70px; 
+    color: #b0b0b0; 
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 50%
+}
+.contact-icons a:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+}
+.contact-icons i {
+    padding: 25px;
+    border-radius: 50%;
+    background-color: #f6f600; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+.contact-item span {
+    color: #b0b0b0;
+    font-weight: bold;
+}
+.contact-icons a.whatsapp i {
+    background-color: rgb(4, 23, 46); 
+}
+.contact-icons a.instagram i {
+    background-color: rgb(4, 23, 46); 
+}
+.contact-icons a.phone i {
+    background-color: rgb(4, 23, 46) 
+}
+.parallax_principal {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.parallax_principal::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.315) 0%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: 0;
+}
+.parallax1 {
+    background-image: url(/Projeto/img/sol_nascendo.png);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: rgb(198, 159, 0);
+    transition: width 0.4s ease, left 0.4s ease;
+    
+}
+
+header ul li a:hover {
+    color: rgb(198, 159, 0);
+    text-decoration: none;
+}
+.logo a:hover {
+    color: rgb(198, 159, 0);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -3px -3px 5px rgba(255, 251, 251, 0.2);
+      
+}
