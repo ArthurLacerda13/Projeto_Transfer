@@ -15,7 +15,7 @@ body {
     height: 200px;
     gap: 16px;
     transition: all 0.3s ease;
-    flex-wrap: wrap;
+    
     justify-content: center;
     
 }
