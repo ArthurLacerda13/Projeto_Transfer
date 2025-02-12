@@ -5,12 +5,11 @@ header {
     top: 5px;
     left: 5px;
     right: 5px;
-    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(255, 250, 250, 0.1);
     background: rgba( 0, 0, 0, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
     backdrop-filter: blur( 7.5px );
@@ -86,13 +85,12 @@ header ul li a:hover::after {
 
 ::-webkit-scrollbar{
     width: 8px;
-    background-color: rgba(170, 170, 170, 0.926);
-    background: rgba(7, 12, 156, 0.25);
+    background-color: rgb(54, 54, 54);
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(3, 3, 158, 0.926);
-    border-radius: 25prgb(203, 207, 206)
+    background-color: rgba(94, 94, 94, 0.926);
+    border-radius: 25px rgb(203, 207, 206)
 }   
 
 @media (max-width: 1070px) {
@@ -124,3 +122,4 @@ header ul li a:hover::after {
         left: 0;
     }
 }
+

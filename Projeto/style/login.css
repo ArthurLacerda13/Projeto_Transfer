@@ -45,7 +45,7 @@ div img {
   margin-top: -46px;
 }
 .container {
-  background-color:  rgba(240, 205, 134, 0.308);
+  background-color:  rgba(161, 160, 160, 0.144);
   padding: 6px;
   width: 350px;
   height: 450px;
@@ -55,7 +55,7 @@ div img {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 0 20px 0 rgba(254, 230, 182, 0.512);
+  box-shadow: 0 0 20px 0 rgba(10, 10, 10, 0.985);
   z-index: 1;
 }
 
@@ -144,7 +144,7 @@ button[type="submit"] {
   left: 450px;
 }
 
-i {
+form i {
   position: absolute;
   left: 0;
   padding: 10px 10px;
