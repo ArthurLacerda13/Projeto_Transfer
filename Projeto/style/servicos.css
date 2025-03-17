@@ -10,6 +10,8 @@
     position: relative;
 }
 
+
+
 .parallax_principal::after {
     content: "";
     position: absolute;

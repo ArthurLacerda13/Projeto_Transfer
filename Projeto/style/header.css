@@ -93,7 +93,7 @@ header ul li a:hover::after {
     border-radius: 25px rgb(203, 207, 206)
 }   
 
-@media (max-width: 1070px) {
+@media (max-width: 870px) {
     .checkbtn {
         display: flex;
     }

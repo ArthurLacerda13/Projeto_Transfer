@@ -1,42 +1,152 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-emphasis: center;
-    /* background-image: linear-gradient( rgb(3, 56, 122), rgb(1, 16, 35)); */
-    background-color: rgba(0, 0, 42, 0.108);
-    background-image: url(../img/ceuestrelado.avif);
+    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
 }
 
-.praia-P{
+main {
+    margin-top: 2rem;
+    padding: 1rem;
     text-align: center;
-    font-size: 30px;
-    color: whitesmoke;
-    padding: 20px;
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    margin: 0 auto;
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: none;
-    top: 50%;
-    transform: translateY(-50%);
+.glassmorphism-dark {
+    background: rgba(30, 30, 30, 1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.carousel-control-prev {
+.texto-neon {
+    text-shadow: 0 0 5px rgba(59, 130, 246, 0.8), 0 0 10px rgba(59, 130, 246, 0.8);
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
 }
 
-.carousel-control-next {
+.destinos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.destino {
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+@media only screen and (width <= 1024px) {
+    .destinos {
+        flex-wrap: wrap;
+    }
+}
+
+.destino:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.destino-figure img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.destino-description {
+    padding: 1rem;
+    background-color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     right: 0;
+    opacity: 0;
+}
+
+.destino.active .destino-description {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.destino.closing .destino-description {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.destino-description h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.destino-description p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.escolher-destino {
+    background-color: #212121;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.escolher-destino:hover {
+    background-color: #444;
+}
+header ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: rgb(198, 159, 0);
+    transition: width 0.4s ease, left 0.4s ease;
+    
+ }
+  
+header ul li a:hover {
+    color: rgb(198, 159, 0);
+    text-decoration: none;
+}
+.logo a:hover {
+    color: rgb(198, 159, 0);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -3px -3px 5px rgba(255, 251, 251, 0.2);
+      
 }
 header ul li a::after {
     content: '';
@@ -59,6 +169,13 @@ header ul li a:hover {
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -3px -3px 5px rgba(255, 251, 251, 0.2);
       
 }
-@media (max-width: 1070px) {
-    
+a :hover {
+    color:  rgb(0, 229, 255);
+}
+.nome {
+    text-decoration: none;
+    color: #fff;
+}
+.nome:hover {
+    color: rgb(0, 229, 255);
 }
