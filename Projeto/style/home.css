@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .parallax_principal::after {
   background: linear-gradient(
     0deg,

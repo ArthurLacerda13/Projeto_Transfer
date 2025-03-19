@@ -27,7 +27,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.492) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.714) 0%, rgba(0, 0, 0, 0.492) 100%);
   z-index: 0;
 }
 .parallax1 {
@@ -44,7 +44,7 @@ div img {
   margin-top: -46px;
 }
 .container {
-  background-color:  rgba(161, 160, 160, 0.144);
+  background-color:  rgba(255, 254, 252, 0.099);
   padding: 6px;
   width: 350px;
   height: 450px;

@@ -12,10 +12,10 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/image.ico" type="image/x-icon">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-
-    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body
@@ -40,22 +40,22 @@
     </header>
 
     <main class="px-4 py-8 content-center w-full">
-        <h1 class="text-3xl font-bold text-center mb-8 text-white texto-neon flex justify-center gap-4">Escolha seu
+        <h1 class="text-3xl font-bold text-center mb-8 text-white texto-neon flex justify-center gap-4 animate__animated animate__bounceInDown">Escolha seu
             Destino <i class="fa-solid fa-umbrella-beach"></i></h1>
         <section class="w-full flex justify-center flex-col items-center">
             <div class="container px-3 rounded-2xl mt-10">
                 <div class="destinos">
-                    <div class="destino" tabindex="0" onclick="toggleDescription(this)">
+                    <div class="destino" tabindex="0" data-aos="zoom-out-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom" onclick="toggleDescription(this)">
                         <div class="destino-figure">
                             <h2>Praia de Pipa</h2>
-                            <img class="bg-black" src="../img/pipa1.jpg" alt="Destino 1">
+                            <img class="bg-black"src="../img/pipa1.jpg" alt="Destino 1">
                         </div>
                         <div class="destino-description">
                             <p>Pipa, uma praia paradisíaca do litoral sul do Rio Grande do Norte.</p>
                             <button class="escolher-destino"><a href="escolher_servicos.html">Escolher Destino</a></button>
                         </div>
                     </div>
-                    <div class="destino" tabindex="0" onclick="toggleDescription(this)">
+                    <div class="destino" tabindex="0" data-aos="zoom-out-up" data-aos-delay="200" data-aos-anchor-placement="top-bottom" onclick="toggleDescription(this)">
                         <div class="destino-figure">
                             <h2>Praia de Tambaba</h2>
                             <img class="bg-black" src="../praias/tambaba.webp" alt="Destino 1">
@@ -65,7 +65,7 @@
                             <button class="escolher-destino"><a href="escolher_servicos.html">Escolher Destino</a></button>
                         </div>
                     </div>
-                    <div class="destino" tabindex="0" onclick="toggleDescription(this)">
+                    <div class="destino" tabindex="0" data-aos="zoom-out-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" onclick="toggleDescription(this)">
                         <div class="destino-figure">
                             <h2>Praia de Jacumã</h2>
                             <img src="../praias/arapuca.jpg" alt="Destino 2">
@@ -75,7 +75,7 @@
                             <button class="escolher-destino"><a href="escolher_servicos.html">Escolher Destino</a></button>
                         </div>
                     </div>
-                    <div class="destino" tabindex="0" onclick="toggleDescription(this)">
+                    <div class="destino" tabindex="0" data-aos="zoom-out-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom" onclick="toggleDescription(this)">
                         <div class="destino-figure">
                             <h2>Praia do amor</h2>
                             <img src="../praias/amor.jpg" alt="Destino 3">
@@ -90,7 +90,7 @@
             </div>
             <div class="container px-3 rounded-2xl mt-10">
                 <div class="destinos">
-                    <div class="destino" tabindex="0" onclick="toggleDescription(this)">
+                    <div class="destino" tabindex="0" data-aos="zoom-out-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom" onclick="toggleDescription(this)">
                         <div class="destino-figure">
                             <h2>Praia da Baía da Traição</h2>
                             <img class="bg-black" src="../praias/bt.jpg" alt="Destino 1">
@@ -100,7 +100,7 @@
                             <button class="escolher-destino"><a href="carrinho.html">Escolher Destino</a></button>
                         </div>
                     </div>
-                    <div class="destino" tabindex="0" onclick="toggleDescription(this)">
+                    <div class="destino" tabindex="0" data-aos="zoom-out-up" data-aos-delay="600" data-aos-anchor-placement="top-bottom" onclick="toggleDescription(this)">
                         <div class="destino-figure">
                             <h2>Ilha de Areia Vermelha</h2>
                             <img class="bg-black" src="../praias/areiavermelha.jpg" alt="Destino 1">
@@ -110,7 +110,7 @@
                             <button class="escolher-destino"><a href="carrinho.html">Escolher Destino</a></button>
                         </div>
                     </div>
-                    <div class="destino" tabindex="0" onclick="toggleDescription(this)">
+                    <div class="destino" tabindex="0" data-aos="zoom-out-up" data-aos-delay="700" data-aos-anchor-placement="top-bottom" onclick="toggleDescription(this)">
                         <div class="destino-figure">
                             <h2>Praia de Intermares</h2>
                             <img src="../praias/intermares.jpg" alt="Destino 2">
@@ -120,7 +120,7 @@
                             <button class="escolher-destino"><a href="escolher_servicos.html">Escolher Destino</a></button>
                         </div>
                     </div>
-                    <div class="destino" tabindex="0" onclick="toggleDescription(this)">
+                    <div class="destino" tabindex="0" data-aos="zoom-out-up" data-aos-delay="800" data-aos-anchor-placement="top-bottom" onclick="toggleDescription(this)">
                         <div class="destino-figure">
                             <h2>Praia do Jacaré</h2>
                             <img src="../praias/jacare.jpg" alt="Destino 3">
@@ -134,7 +134,7 @@
             </div>
             <div class="container px-3 rounded-2xl mt-10">
                 <div class="destinos">
-                    <div class="destino" tabindex="0" onclick="toggleDescription(this)">
+                    <div class="destino" tabindex="0" data-aos="zoom-out-up" data-aos-delay="900" data-aos-anchor-placement="top-bottom" onclick="toggleDescription(this)">
                         <div class="destino-figure">
                             <h2>Piscinas Naturais do Seixas</h2>
                             <img class="bg-black" src="../praias/seixas.jpg" alt="Destino 1">
@@ -144,7 +144,7 @@
                             <button class="escolher-destino"><a href="carrinho.html">Escolher Destino</a></button>
                         </div>
                     </div>
-                    <div class="destino" tabindex="0" onclick="toggleDescription(this)">
+                    <div class="destino" tabindex="0" data-aos="zoom-out-up" data-aos-delay="1000" data-aos-anchor-placement="top-bottom" onclick="toggleDescription(this)">
                         <div class="destino-figure">
                             <h2>Praia de Cabedelo</h2>
                             <img class="bg-black" src="../praias/dique.jpeg" alt="Destino 1">
@@ -154,7 +154,7 @@
                             <button class="escolher-destino"><a href="carrinho.html">Escolher Destino</a></button>
                         </div>
                     </div>
-                    <div class="destino" tabindex="0" onclick="toggleDescription(this)">
+                    <div class="destino" tabindex="0" data-aos="zoom-out-up" data-aos-delay="1100" data-aos-anchor-placement="top-bottom" onclick="toggleDescription(this)">
                         <div class="destino-figure">
                             <h2>Praia de coqueirinho</h2>
                             <img src="../img/coqueirinho.jpg" alt="Destino 2">
@@ -164,7 +164,7 @@
                             <button class="escolher-destino"><a href="escolher_servicos.html">Escolher Destino</a></button>
                         </div>
                     </div>
-                    <div class="destino" tabindex="0" onclick="toggleDescription(this)">
+                    <div class="destino" tabindex="0" data-aos="zoom-out-up" data-aos-delay="1200" data-aos-anchor-placement="top-bottom" onclick="toggleDescription(this)">
                         <div class="destino-figure">
                             <h2>Praia de Jacumã</h2>
                             <img src="../praias/jacuma.jpg" alt="Destino 3">
@@ -188,6 +188,7 @@
         crossorigin="anonymous"></script>
     <script src="/Projeto/scripts/menu.js"></script>
     <script src="/Projeto/scripts/scroll_logo.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
