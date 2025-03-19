@@ -1,3 +1,13 @@
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
 .glassmorphism-dark {
     background: rgba(30, 30, 30, 1);
     backdrop-filter: blur(10px);
@@ -9,4 +19,10 @@
 }
 .texto-neon {
     text-shadow: 0 0 5px rgba(59, 130, 246, 0.8), 0 0 10px rgba(59, 130, 246, 0.8);
+}
+
+.fixed-width {
+    width: 100%;
+    max-width: 500px;
+    min-width: 400px;
 }
